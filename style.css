@@ -1,0 +1,188 @@
+nav {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: x-large;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: #ffff;
+    font-family: 'Comfortaa', cursive;
+    font-size: large;
+    font-weight: 600;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+#add {
+    background-color: rgb(27, 183, 250);
+    cursor: pointer;
+}
+
+#clear {
+    background-color: rgb(239, 65, 118);
+    cursor: pointer;
+}
+
+.button+.button {
+    margin-left: 5px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: auto;
+    opacity: 0;
+    transition: all 300ms
+}
+
+#task {
+    height: 40px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: large;
+    text-align: center;
+}
+
+#submit {
+    background-color: rgb(3, 238, 160);
+    margin-top: 10px;
+    width: 80%;
+}
+
+#close {
+    background-color: #ff0000;
+    margin-top: 10px;
+    width: 20%;
+}
+.line{
+    position:absolute;
+    left:10%;
+    background-color: #878787;
+    width: 80%;
+    height: 2.5px;
+    transition: ease 300ms;
+}
+
+.task-list {
+    position: absolute;
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+    transition: ease 300ms;
+    font-family: 'Comfortaa', cursive;
+    font-size: large;
+    font-weight: 600;
+    overflow-y: scroll;
+}
+
+.items {
+    padding-top: 10px;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasknmark {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.taskbtns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+}
+
+.taskname {
+    padding-left: 10px;
+    width: 100%;
+}
+
+#taskbtn {
+    cursor: pointer;
+    width: 30px;
+    border: none;
+    background: none;
+}
+
+#taskbtn+#taskbtn {
+    margin-left: 10px;
+}
+
+.notask {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+footer {
+    width: 50%;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 25%;
+    justify-content: center;
+}
+
+.footer {
+    width: 100%;
+    border-top: #878787 solid;
+    padding-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+@media(max-width : 900px) {
+    .button {
+        width: 40%;
+    }
+
+    .input {
+        width: 80%;
+    }
+
+    #submit {
+        width: 70%;
+    }
+
+    #close {
+        width: 30%;
+    }
+
+    .items {
+        width: 80vw;
+    }
+}
