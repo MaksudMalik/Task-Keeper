@@ -24,7 +24,6 @@ addbtn.addEventListener('click', function () {
     addopt.style.opacity = 1
     insert.style.cursor = 'pointer'
     closebtn.style.cursor = 'pointer'
-    tasklist.style.height="54vh";
 })
 
 closebtn.addEventListener('click', function () {
@@ -37,7 +36,6 @@ closebtn.addEventListener('click', function () {
     input.value = ''
     closebtn.style.cursor = ''
     insert.style.cursor = ''
-    tasklist.style.height="70vh";
 })
 
 clr.addEventListener('click', function () {
